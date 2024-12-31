@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'abonner à M6 Music</title>
+    <link href="/exercice1/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="/exercice1/index.html"><img src="/exercice1/images/M6_Hits_Logo.png" width="90" alt="M6 Hits logo"></a>
+        </div>
+        <div>
+
+        </div>
+        <img src="/exercice1/images/avatar.png" width="90" alt="Avatar">
+        <p>Régis</p><p>connecté</p>
+        <p>Mon compte</p><p>Me déconnecter</p>
+        </div>
+
+    </header>
+
+    <h1>Abonnez-vous</h1>
+
+    <form method="get">
+        <fieldset>
+            <legend>Vos informations personnelles</legend>
+            <br>
+            <table width="600">
+                <tbody align="right">
+                <!-- Colonne 1 -->
+                  <tr >
+                    <td >
+                    <div>
+                        <label for="nom">Nom* :</label>
+                        <input type="texte" name="nom" id="nom"
+                            placeholder="Votre nom ?" maxlength="30"
+                            autofocus="autofocus" required="required">
+                    </div>
+                <br>
+                    <div>
+                        <label for="nom">Prénom* :</label>
+                        <input type="texte" name="prenom" id="prenom"
+                            placeholder="Votre prénom ?" maxlength="30"
+                            required="required">
+                    </div>
+                <br>
+                    <div>
+                        <label for="email">Email* :</label>
+                        <input type="email" name="email" id="email"
+                            placeholder="Votre email ?" maxlength="30"
+                            required="required">
+                    </div>
+                <br>
+                    <div>
+                        <label for="mdp">Mot de passe* :</label>
+                        <input type="password" name="mdp" id="mdp"
+                            placeholder="Votre mot de passe ?" maxlength="20"
+                            required="required">
+                    </div>
+                
+                    <div>
+                        <label for="mdp2">Vérification* :</label>
+                        <input type="password" name="mdp2" id="mdp2"
+                            placeholder="Répétez le mot de passe" maxlength="20"
+                            required="required">
+                    </div>    
+                </td>
+                <td width="30"></td>
+                <!-- Colonne 2 -->
+                    <td>
+                    <div>
+                        <label for="nom">Date de naissance* :</label>
+                        <input type="date" name="naissance" id="naissance"
+                            required="required">
+                    </div>
+                    
+                <br>
+                <div>
+                    <label for="groupe">Groupe préféré :</label>
+                    <select name="groupe" id="groupe" size="1">
+                        <optgroup label="Chanson française">
+                            <option value="groupe1">Didier Barbelivien</option>
+                            <option value="groupe2">George Brassens</option>
+                            <option value="groupe3">Claude Nougaro</option>
+                            <option value="groupe4">Serge Gainsbourg</option>
+                        </optgroup>
+                        <optgroup label="Rock français">
+                            <option value="groupe5">Indochine</option>
+                            <option value="groupe6">Rita Mitsouko</option>
+                            <option value="groupe7">Mano Negra</option>
+                            <option value="groupe8">Noir Désir</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                    <div>
+                        <label for="telephone">Téléphone :</label>
+                        <input type="phone" name="telephone" id="telephone"
+                            placeholder="Votre 06 ?" maxlength="16">
+                    </div>
+                <br>
+                    
+                </td>
+                  </tr>
+                </tbody>
+              </table>
+            <br>
+        </fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Votre formule d'abonnement</legend>
+    <br>
+    <table class="cellgrise" width="600" style="border-collapse: collapse;">
+        <thead align="center">
+          <tr>
+            <th></th>
+            <th>
+                <input type="radio" name="choixabo" id="premiumplus" value="premiumplus" checked="checked">
+                <label for="premiumplus">Premium+</label>
+            </th>
+            <th>
+                <input type="radio" name="choixabo" id="premium" value="premium">
+                <label for="premium">Premium</label>
+            </th>
+            <th>
+                <input type="radio" name="choixabo" id="discovey" value="discovey">
+                <label for="discovey">Discovery</label>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="right">Accès web</td>
+            <td align="center" >✅</td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+          </tr>
+          <tr>
+            <td align="right">Accès mobile</td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+          </tr>
+          <tr>
+            <td align="right">Ecoute illimitée</td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center">❌</td>
+          </tr>
+          <tr>
+            <td align="right">Tarif</td>
+            <td align="center">11,99 €/mois</td>
+            <td align="center">5,99 €/mois</td>
+            <td align="center">Gratuit 1 mois</td>
+          </tr>
+        </tbody>
+      </table>
+    <br>
+    <table  align="center">
+        <tbody>
+          <tr>
+            <td>
+                <input type="checkbox" name="newsm6music" id="newsm6music">
+                <label for="newsm6music">Recevoir les newsletters M6 Music &nbsp;&nbsp;</label>
+            </td>
+            <td>
+                <input type="checkbox" name="newspartenaires" id="newspartenaires">
+                <label for="newspartenaires">Recevoir les newsletters de nos partenaires</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <br>
+</fieldset>
+
+
+
+
+
+    <br>
+    <div>
+        <input type="reset" value="Annuler">
+        <input type="submit" value="Valider">
+    </div>
+
+    </form>
+
+</body>
+</html>
